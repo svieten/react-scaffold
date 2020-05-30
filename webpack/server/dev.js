@@ -10,7 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, '../../../public')
     },
-    stats: none,
+    stats: 'none',
     watchOptions: {
         ignored: [
             /node_modules/,

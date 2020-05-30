@@ -1,4 +1,4 @@
-const mrege = require('merge')
+const merge = require('merge')
 const devConfig = require('./dev')
 const prodConfig = require('./prod')
 let config = require('./config')
@@ -16,7 +16,7 @@ else{
     if(shouldUI){
         shelljs.rm('rf', 'dist/build')
     }
-    config = merge(config, uiConfig)
+    config = merge(config, prodConfig)
 }
 
 module.exports = config

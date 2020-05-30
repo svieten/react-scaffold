@@ -1,14 +1,13 @@
 const path = require('path')
 const webpack = require('webpack')
 const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin')
-const StyleLintPlugin = require('style-lint-plugin')
-const env = require('./env')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
 
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
     entry: ['webpack-dev-server/client?http://localhost:3000/', 'webpack/hot/dev-server'],
     output: {
-        path: path.resolve(__dirname, '../../../public'),
+        path: path.resolve(__dirname, '../../public'),
         filename: 'build/build.js'
     },
     mode: 'development',

@@ -21,7 +21,6 @@ module.exports = {
         minimizer: [
             new UgilyJsPlugin({
                 parallel: true,
-                warningsFilter: false,
                 sourceMap: true,
                 uglifyOptions: {
                     output: {
@@ -64,7 +63,7 @@ module.exports = {
                         loader: 'postcss-loader',
                         options: {
                             config: {
-                                path: pathh.resolve(
+                                path: path.resolve(
                                     __dirname,
                                     '../../../postcss.config.js'
                                 )

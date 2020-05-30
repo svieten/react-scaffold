@@ -5,7 +5,7 @@ module.exports = {
     entry: ['@babel/polyfill', './src/index.jsx'],
     target: 'web',
     output: {
-        publicPath: env.environment.BASE_URL === '"false"' ? '/' : JSON.parse(env.environment.BASE_URL)
+        publicPath: '/'
     },
     resolve: {
         modules: ['node_modules'],
